@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'pyquiz.apps.PyquizConfig',
+    'funquiz.apps.FunquizConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
