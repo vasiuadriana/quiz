@@ -1,1 +1,12 @@
-{{ question.text }}
+{% extends "pyquiz/base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+<form action="{% url 'pyquiz:answer' question.id %}" method="post">
+    <legend>{{ question.text }}</legend>
+    {% csrf_token %}
+    {{ form|as_bootstrap_horizontal }}
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Answer</button>
+    </div>
+</form>
+{% endblock %}

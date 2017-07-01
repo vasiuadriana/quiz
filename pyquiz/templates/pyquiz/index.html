@@ -1,5 +1,8 @@
+{% extends "pyquiz/base.html" %}
+{% block content %}
 <ul>
     {% for question in questions %}
         <li><a href="/pyquiz/question/{{ question.id}}">{{ question.text }}</a></li>
     {% endfor %}
 </ul>
+{% endblock %}

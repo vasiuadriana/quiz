@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load bootstrap_themes %}
+    {% bootstrap_styles theme='default' type='min.css' %}
+    {% bootstrap_script use_min=True %}
+</head>
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
